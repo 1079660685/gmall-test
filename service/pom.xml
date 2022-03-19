@@ -11,6 +11,10 @@
 
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>service-gateway</module>
+        <module>service-product</module>
+    </modules>
 
     <dependencies>
         <!--依赖服务的工具类-->
@@ -27,10 +31,10 @@
         </dependency>
 
         <!--web 需要启动项目-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--mybatis-plus-->
         <dependency>
